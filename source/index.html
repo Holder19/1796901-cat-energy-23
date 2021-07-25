@@ -1,12 +1,139 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img  class="page-header__logo-image"  width="33" height="37" src="img/icon/logo-mobile.svg" alt="Логотип интернет-магазина фитнес еды для котиков">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="vissualy-hidden">Открыть меню</span></button>
+        <div class="page__leveler">
+          <ul class="nav-list">
+            <li class="nav-list__item nav-list__item-current">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="nav-list__item nav-list__item-current">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="nav-list__item nav-list__item-current">
+              <a href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+<main class="page-main">
+  <h1 class="vissualy-hidden" >Магазин фитнес еды для котиков</h1>
+  <section class="intro">
+    <div class="page__leveler">
+      <h2 class="intro__title">Функциональное питание для котов</h2>
+      <p class="intro__text">Занялся собой? Займись котом!</p>
+      <img class="intro__img" src="" alt="Стаканчик корма с курочкой для вашего котика" width="" height="">
+      <a class="button__intro button" href="form.html">Подобрать программу</a>
+    </div>
+  </section>
+  <div class="page__leveler">
+    <section class="programs">
+      <section class="slim-program">
+        <h2 class="slim-program__title">Похудение</h2>
+        <p class="slim-program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <a href="catalog.html" class="slim-program__link">Каталог slim</a>
+      </section>
+      <section class="pro-program">
+        <h2 class="pro-program__title">Набор массы</h2>
+        <p class="pro-program__title">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+        <a href="catalog.html" class="pro-program__link">Каталог pro</a>
+      </section>
+    </section>
+  </div>
+  <div class="page__leveler">
+    <section class="features">
+      <h2 class="features__title">Как это работает</h2>
+      <ul class="features__list">
+        <li class="features__item">
+          <p class="features__text">Функциональное питание содержит только полезные питательные вещества.</p>
+        </li>
+        <li class="features__item">
+          <p class="features__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        </li>
+        <li class="features__item">
+          <p class="features__text">Замените один-два приемаобычной еды на наше функциональное питание.</p>
+        </li>
+        <li class="features__item">
+          <p class="features__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <section class="example">
+    <div class="page__leveler">
+      <h2 class="example__title">Живой пример</h2>
+      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+      <div class="example__stats">
+        <div class="example__weight">
+          <p class="example__weight-text">5 КГ</p>
+          <p class="example__weight-description">Снижение веса</p>
+        </div>
+        <div class="example__time">
+          <p class="example__time-text">60 ДНЕЙ</p>
+          <p class="example__time-description">Затрачено времени</p>
+        </div>
+        <p class="example__total">Затраты на питание:<span>15 000 РУБ.</span></p>
+        <div class="slider">
+          <div class="slider__before"></div>
+          <div class="slider__after"></div>
+          <div class="slider__toggles">
+            <button class="slider__toggle slider__toggle-before" type="button">Было</button>
+            <div class="slider__bar">
+              <div class="slider__bar-toggle"></div>
+            </div>
+            <button class="slider__toggle slider__toggle-after" type="button">Стало</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cooperation">
+    <div class="page__leveler">
+      <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="cooperation__map">
+        <!-- Здесь будет карта -->
+      </div>
+    </div>
+  </section>
+</main>
+<div class="page__leveler">
+  <footer class="page-footer">
+    <div class="page-footer__logo">
+      <a href="#">
+        <img src="" alt="Логотип интернет-магазина фитнес еды для котиков" width="" height="">
+      </a>
+    </div>
+    <div class="page-footer__social social">
+      <h2 class="visually-hidden">Давайте дружить</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#"><span class="visually-hidden">Вконтакте</span></a>
+        </li>
+        <li class="social__item">
+          <a href="#"><span class="visually-hidden">Инстаграмм</span></a>
+        </li>
+        <li class="social__item">
+          <a href="#"><span class="visually-hidden">Фейсбук</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer-copyright copyright">
+      <a href="#">
+        <img src="" alt="Логотип HTML Academy" width="" height="">
+      </a>
+    </div>
+  </footer>
+</div>
   </body>
 </html>
