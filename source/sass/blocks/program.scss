@@ -1,0 +1,29 @@
+.program {
+  background-color: var(--basic-gray);
+}
+
+.program__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 29px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+.program__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  color: var(--basic-dark-gray);
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 38px;
+}
+
+.program__link {
+  color: var(--basic-black);
+  font-size: 16px;
+  line-height: 16px;
+}

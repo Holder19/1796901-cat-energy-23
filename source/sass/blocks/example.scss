@@ -1,0 +1,50 @@
+.example {
+  background-color: var(--special-light-gray);
+}
+
+.example__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 33px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.example__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-dark-gray);
+}
+
+.example__weight-text,
+.example__time-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example-description {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--basic-dark-gray);
+  text-transform: lowercase;
+}
+
+.example__total {
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--basic-black);
+}

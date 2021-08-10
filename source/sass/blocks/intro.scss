@@ -1,0 +1,30 @@
+.intro {
+  background-image: url("/source/img/index-background-cat.jpg");
+  background-color: var(--basic-green);
+  background-repeat: no-repeat;
+  width: 320px;
+  color: var(--basic-white);
+}
+
+.intro__title {
+  margin: 0;
+  padding: 0;
+  margin-top: 27px;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.intro__text {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.intro__button {
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 18px;
+}

@@ -1,0 +1,23 @@
+.card-more__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--special-black);
+}
+
+.card-more__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--basic-dark-gray);
+}
+
+.card-more__button {
+  background-color: var(--basic-gray);
+  color: var(--basic-dark-gray);
+}
