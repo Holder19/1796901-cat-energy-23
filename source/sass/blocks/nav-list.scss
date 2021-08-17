@@ -7,9 +7,25 @@
   list-style: none;
   font-weight: 500;
   text-transform: uppercase;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .nav-list__link {
   color: var(--basic-black);
   text-decoration: none;
+
+  @media (min-width: $desktop) {
+    color: var(--basic-white);
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+  }
 }

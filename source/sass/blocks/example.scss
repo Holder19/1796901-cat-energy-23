@@ -1,5 +1,15 @@
 .example {
   background-color: var(--special-light-gray);
+
+  @media (min-width: $tablet) {
+    background-color: var(--basic-white);
+    background-image: linear-gradient(var(--basic-white) 0%, var(--basic-white) 57%, var(--basic-gray) 57%, var(--basic-gray) 100%);
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 64px;
+    background-image: linear-gradient(var(--basic-white) 0%, var(--basic-white) 29%, var(--basic-gray) 29%, var(--basic-gray) 100%);
+  }
 }
 
 .example__title {
@@ -9,6 +19,12 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: $desktop) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 146px;
+  }
 }
 
 .example__text {
@@ -19,6 +35,12 @@
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-dark-gray);
+
+  @media (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 69px;
+  }
 }
 
 .example__weight-text,
@@ -28,9 +50,14 @@
   margin-bottom: 15px;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
-.example-description {
+.example__description {
   padding: 0;
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -38,13 +65,76 @@
   line-height: 12px;
   color: var(--basic-dark-gray);
   text-transform: lowercase;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__total {
   margin: 0;
   padding: 0;
   margin-top: 25px;
+  margin-bottom: 42px;
   font-size: 14px;
   line-height: 20px;
   color: var(--basic-black);
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    text-align: right;
+    max-width: 180px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: none;
+    text-align-last: left;
+    margin-top: 55px;
+    font-size: 20px;
+
+    span {
+      margin-left: 63px;
+    }
+  }
+}
+
+.example__stats-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    min-width: 366px;
+  }
+}
+
+.example__stats {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.example__inner-wrapper {
+  @media (min-width: $desktop) {
+    width: 436px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }

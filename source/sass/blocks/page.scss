@@ -4,3 +4,22 @@
   font-weight: 400;
   background-color: var(--basic-white);
 }
+
+.page__leveler {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 60px;
+  }
+}
+
+.page__body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
