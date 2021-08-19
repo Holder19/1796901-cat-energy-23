@@ -31,7 +31,7 @@
 .cooperation__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 27px 26px;
+  padding: 27px 0 26px 0;
 
   @media (min-width: $tablet) {
     padding: 66px 72px 58px 72px;
