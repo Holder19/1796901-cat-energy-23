@@ -23,9 +23,14 @@
   text-decoration: none;
 
   @media (min-width: $desktop) {
-    color: var(--basic-white);
     font-size: 20px;
     line-height: 36px;
     font-weight: 400;
+  }
+}
+
+.nav-list__link-index {
+  @media (min-width: $desktop) {
+    color: var(--basic-white);
   }
 }
