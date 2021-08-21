@@ -1,16 +1,82 @@
 .gift {
-  background-image: url("/source/img/background/gift-photo.png");
-  width: 289px;
+  background: linear-gradient(0deg, var(--special-background-green) 0%, var(--special-background-green) 100%),
+    url("../../img/background/gift-photo.png") no-repeat center;
+  min-width: 280px;
+  background-size: cover;
   height: 289px;
-  background-repeat: no-repeat;
   background-color: var(--basic-green);
+
+  @media (min-width: $tablet) {
+    height: 200px;
+    background: linear-gradient(0deg, var(--special-background-green) 0%, var(--special-background-green) 100%),
+      url("../../img/background/gift-photo-tablet.png") no-repeat center;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop) {
+    background: linear-gradient(0deg, var(--special-background-green) 0%, var(--special-background-green) 100%),
+      url("../../img/background/gift-photo-desktop.png") no-repeat center;
+    background-size: cover;
+    height: 290px;
+    min-width: 244px;
+  }
 }
 
 .gift__text {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
+  text-align: center;
   color: var(--basic-white);
   font-size: 16px;
   line-height: 20px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    margin-left: auto;
+    width: 161px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: auto;
+    text-align: center;
+  }
+
+  &::before {
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../../img/icon/icon-gift.svg");
+    position: absolute;
+    bottom: 100px;
+    right: 50%;
+    transform: translateX(40px);
+
+    @media (min-width: $tablet) {
+      top: -11%;
+      left: -250%;
+    }
+
+    @media (min-width: $desktop) {
+      left: 0;
+      top: -125px;
+    }
+  }
+}
+
+.gift__text-wrapper {
+  display: flex;
+  padding-top: 180px;
+  padding-right: 60px;
+  padding-left: 60px;
+  justify-content: center;
+
+  @media (min-width: $tablet) {
+    padding: 70px 124px 70px 77px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 185px 43px 42px 41px;
+  }
 }
