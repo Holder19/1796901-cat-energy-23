@@ -18,6 +18,20 @@
   }
 }
 
+.page__leveler--tablet_off {
+  @media (min-width: $tablet) {
+    display: contents;
+  }
+}
+
+.page__leveler--mobile_off {
+  display: contents;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
 .page__body {
   margin: 0;
   display: grid;

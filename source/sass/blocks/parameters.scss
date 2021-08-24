@@ -1,0 +1,28 @@
+.parameters__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  row-gap: 13px;
+
+  @media (min-width: $tablet) {
+    row-gap: 20px;
+  }
+}
+
+.parameters__item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.parameters__label {
+  margin-right: 13px;
+}
+
+.parameters__input {
+  border: 1px solid var(--special-input-gray);
+  flex-grow: 1;
+}

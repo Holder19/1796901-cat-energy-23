@@ -1,0 +1,39 @@
+.additionally__list {
+  margin: 0;
+  padding: 35px 0;
+  list-style: none;
+  display: grid;
+  row-gap: 20px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    padding: 57px 0;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 221px);
+    column-gap: 104px;
+  }
+}
+
+.additionally__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.additionally__label {
+  margin-left: 16px;
+  flex-grow: 1;
+}
+
+.addititionally__subtitle {
+  font-size: 24px;
+  line-height: 26px;
+  color: var(--basic-black);
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
