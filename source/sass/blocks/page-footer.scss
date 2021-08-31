@@ -17,16 +17,44 @@
 .page-footer__logo {
   text-align: center;
   padding-bottom: 32px;
+  border-bottom: 1px solid var(--special-form-gray);
+  width: 100%;
 
   @media (min-width: $tablet) {
     padding: 0;
+    border: 0;
+    width: auto;
+  }
+}
+
+.page-footer__logo-icon {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
 .page-footer__social {
-  padding-bottom: 21px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--special-form-gray);
+  width: 100%;
 
   @media (min-width: $tablet) {
+    padding: 0;
+    border: 0;
+    width: auto;
+  }
+}
+
+.page-footer__copyright {
+  width: 100%;
+  padding-top: 28px;
+
+  @media (min-width: $tablet) {
+    width: auto;
     padding: 0;
   }
 }

@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   h3 {
     color: var(--basic-dark-gray);
     font-size: 16px;
@@ -12,4 +16,8 @@
     margin: 0;
     padding: 0;
   }
+}
+
+.copyright__link:hover .copyright__image {
+  background-color: var(--basic-green);
 }

@@ -25,6 +25,12 @@
 
   @media (min-width: $tablet) {
     font-size: 16px;
+    width: 160px;
+
+    span {
+      display: block;
+      margin-top: 10px;
+    }
   }
 }
 
@@ -43,14 +49,14 @@
   }
 }
 
-.cooperation-index {
-  background-color: var(--basic-white);
-}
-
 .cooperation {
   background-color: var(--basic-gray);
 
   @media (min-width: $desktop) {
     background-color: transparent;
   }
+}
+
+.cooperation--index {
+  background-color: var(--basic-white);
 }

@@ -36,10 +36,16 @@
   line-height: 18px;
   color: var(--basic-dark-gray);
 
-  @media (min-width: $desktop) {
+  @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 69px;
+    margin-bottom: 54px;
+    padding-right: 10px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 65px;
+    padding-right: 0;
   }
 }
 
@@ -50,6 +56,7 @@
   margin-bottom: 15px;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
 
   @media (min-width: $tablet) {
     font-size: 30px;
@@ -65,17 +72,36 @@
   line-height: 12px;
   color: var(--basic-dark-gray);
   text-transform: lowercase;
+  text-align: center;
+  position: absolute;
+  background-color: var(--special-light-gray);
+  max-width: 80px;
+  transform: translate(20px, 2px);
 
   @media (min-width: $tablet) {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 14px;
+    background-color: var(--basic-white);
+    max-width: 160px;
+    padding: 0 6px;
+    transform: translate(-10px, 2px);
+  }
+
+  @media (min-width: $desktop) {
+    background-color: var(--basic-gray);
+  }
+}
+
+.example__weight-description {
+  @media (min-width: $tablet) {
+    transform: translate(0, 2px);
   }
 }
 
 .example__total {
   margin: 0;
   padding: 0;
-  margin-top: 25px;
+  margin-top: 35px;
   margin-bottom: 42px;
   font-size: 14px;
   line-height: 20px;
@@ -88,6 +114,11 @@
     text-align: right;
     max-width: 180px;
     font-size: 20px;
+
+    span {
+      display: inline-block;
+      margin-top: 10px;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -98,6 +129,7 @@
 
     span {
       margin-left: 63px;
+      margin-top: 0;
     }
   }
 }
@@ -136,5 +168,21 @@
     width: 436px;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+}
+
+
+.example__time,
+.example__weight {
+  min-width: 124px;
+  border: 1px solid var(--special-gray);
+  border-radius: 3px;
+  min-height: 64px;
+  position: relative;
+  padding-top: 14px;
+
+  @media (min-width: $tablet) {
+    padding: 15px 28px 8px;
+    min-width: 162px;
   }
 }

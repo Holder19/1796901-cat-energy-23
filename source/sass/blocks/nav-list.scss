@@ -1,20 +1,30 @@
 .nav-list__item {
   margin: 0;
-  padding: 0;
-  margin-bottom: 46px;
+  padding: 22px 20px 24px;
   font-size: 20px;
   line-height: 20px;
   list-style: none;
   font-weight: 500;
   text-transform: uppercase;
+  border-bottom: 1px solid var(--special-header-gray);
+
+  &:first-child {
+    border-top: 1px solid var(--special-header-gray);
+
+    @media (min-width: $tablet) {
+      border: 0;
+    }
+  }
 
   &:last-child {
-    margin-bottom: 0;
+    border: 0;
   }
 
   @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 24px;
+    padding: 0;
+    border: 0;
   }
 }
 
@@ -29,8 +39,42 @@
   }
 }
 
-.nav-list__link-index {
+.nav-list__link[href] {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.nav-list__link--index {
   @media (min-width: $desktop) {
     color: var(--basic-white);
+  }
+}
+
+.nav-list__link--index[href] {
+  @media (min-width: $desktop) {
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.nav-list__link--current {
+  text-decoration: underline;
+  text-decoration-color: var(--basic-green);
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+  cursor: default;
+
+  @media (min-width: $desktop) {
+    text-decoration-color: var(--basic-white);
   }
 }

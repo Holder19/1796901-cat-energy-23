@@ -7,9 +7,25 @@
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
+    min-width: 130px;
   }
 }
 
 .social__item {
   list-style: none;
+}
+
+.social__link {
+  width: 30px;
+  height: 30px;
+  background-color: var(--basic-black);
+  display: inline-block;
+
+  &:hover {
+    background-color: var(--basic-green);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

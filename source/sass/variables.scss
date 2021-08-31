@@ -14,8 +14,12 @@
   --special-icon-gray: #d3d3d3;
   --special-input-gray: #e7e7e7;
   --special-form-gray: #d9d9d9;
+  --special-header-gray: #e6e6e6;
+  --special-green-button: #5eaa2f;
+  --special-white: rgba(255, 255, 255, 0.3);
+  --special--slider-gray: #dcdcdc;
 }
 
-$mobile: 320px;
+$mobile-only: 767px;
 $tablet: 768px;
 $desktop: 1280px;
