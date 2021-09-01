@@ -67,7 +67,7 @@
   }
 }
 
-.nav-list__link--current {
+.nav-list__link[aria-current="page"] {
   text-decoration: underline;
   text-decoration-color: var(--basic-green);
   text-underline-offset: 10px;
