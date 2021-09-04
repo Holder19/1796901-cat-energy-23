@@ -16,10 +16,6 @@
     }
   }
 
-  &:last-child {
-    border: 0;
-  }
-
   @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 24px;
@@ -73,8 +69,10 @@
   text-underline-offset: 10px;
   text-decoration-thickness: 2px;
   cursor: default;
+}
 
-  @media (min-width: $desktop) {
+@media (min-width: $desktop) {
+  .nav-list__link--index[aria-current="page"] {
     text-decoration-color: var(--basic-white);
   }
 }

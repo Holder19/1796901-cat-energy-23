@@ -1,7 +1,29 @@
 .button {
+  font-family: "Oswald", sans-serif;
   background-color: var(--basic-green);
   color: var(--basic-white);
   text-transform: uppercase;
   display: flex;
   justify-content: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover {
+    background-color: var(--special-green-button);
+  }
+
+  &:active {
+    color: var(--special-white);
+  }
+}
+
+.button--more {
+  &:hover {
+    background-color: var(--special-border-gray);
+  }
+
+  &:active {
+    color: var(--color-button-active-gray);
+  }
 }

@@ -88,14 +88,6 @@
   line-height: 18px;
   padding: 7px 44px;
 
-  &:hover {
-    background-color: var(--special-green-button);
-  }
-
-  &:active {
-    color: var(--special-white);
-  }
-
   @media (min-width: $tablet) {
     grid-row-start: 3;
     width: 244px;

@@ -10,3 +10,38 @@
   margin: 0;
   padding: 0;
 }
+
+.program-goal__label {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--special-gray);
+    margin-right: 15px;
+  }
+
+  &::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(8px);
+  }
+}
+
+.program-goal__label:hover::before {
+  border-color: var(--border-hover);
+}
+
+.program-goal__radio:checked + .program-goal__label::after {
+  background-color: var(--basic-green);
+}
+
+.program-goal__radio:disabled + .program-goal__label {
+  opacity: 0.3;
+}
