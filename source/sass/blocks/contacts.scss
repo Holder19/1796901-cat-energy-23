@@ -3,8 +3,8 @@
   line-height: 26px;
   color: var(--basic-black);
   padding-left: 20px;
-  padding-right: 20px;
   padding-top: 26px;
+  width: min-content;
 
   @media (min-width: $tablet) {
     font-size: 36px;
