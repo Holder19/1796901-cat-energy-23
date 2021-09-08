@@ -2,8 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/apple_180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>Кэт энерджи: Главная</title>
   </head>
   <body class="page__body">
@@ -37,7 +41,13 @@
       <div class="intro__wrapper">
         <h2 class="intro__title">Функциональное питание для котов</h2>
         <p class="intro__text">Занялся собой? Займись котом!</p>
-        <img class="intro__img" src="img/index-product-img.png" alt="Стаканчик корма с курочкой для вашего котика" width="280" height="270">
+        <div class="intro__img-wrapper">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="./img/index-product-image-desktop@1x.png 1x, ./img/index-product-image-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/index-product-image-tablet@1x.png 1x, ./img/index-product-image-tablet@2x.png 2x">
+            <img class="intro__img" src="./img/index-product-image-mobile@1x.png" srcset="./img/index-product-image-mobile@2x.png 2x" alt="Стаканчик корма с курочкой для вашего котика" width="280" height="270">
+          </picture>
+        </div>
         <a class="intro__button button" href="form.html">Подобрать программу</a>
       </div>
     </div>
@@ -81,9 +91,9 @@
   <section class="example">
     <div class="page__leveler">
       <div class="example__wrapper">
-      <div class="example__inner-wrapper">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="example__inner-wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="example__stats">
             <div class="example__stats-wrapper">
               <div class="example__weight">
@@ -95,22 +105,34 @@
                 <p class="example__time-description example__description">Затрачено времени</p>
               </div>
             </div>
-            <p class="example__total">Затраты на питание:<span>15 000 руб.</span></p>
-      </div>
-        </div>
-          <div class="page__slider slider">
-            <div class="slider__before"></div>
-            <div class="slider__after"></div>
-            <div class="slider__toggles">
-              <button class="slider__toggle slider__toggle-before" type="button">Было</button>
-              <div class="slider__bar">
-                <div class="slider__bar-toggle"></div>
-              </div>
-              <button class="slider__toggle slider__toggle-after" type="button">Стало</button>
+              <p class="example__total">Затраты на питание:<span>15 000 руб.</span></p>
             </div>
           </div>
+    </div>
+    <div class="page__slider slider">
+      <div class="slider__images-wrapper">
+        <div class="slider__before">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/cat_fat@1x.png 1x, ./img/cat_fat@2x.png 2x">
+            <img class="slider__image slider__image--before" src="./img/cat_fat_mobile@1x.png" srcset="./img/cat_fat_mobile@2x.png 2x" alt="Пример котика до приема нашей продукции" width="311" height="232">
+          </picture>
+        </div>
+        <div class="slider__after">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/cat_skinny@1x.png 1x, ./img/cat_skinny@2x.png 2x">
+            <img class="slider__image slider__image--after" src="./img/cat_skinny_mobile@1x.png" srcset="./img/cat_skinny_mobile@2x.png 2x" alt="Пример котика после приема нашей продукции">
+          </picture>
+        </div>
+      </div>
+      <div class="slider__toggles">
+        <button class="slider__toggle slider__toggle-before" type="button">Было</button>
+        <div class="slider__bar">
+          <div class="slider__bar-toggle"></div>
+        </div>
+        <button class="slider__toggle slider__toggle-after" type="button">Стало</button>
       </div>
     </div>
+  </div>
   </section>
   <section class="cooperation cooperation--index">
     <div class="page__leveler">

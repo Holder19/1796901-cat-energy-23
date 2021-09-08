@@ -1,24 +1,42 @@
 .gift {
   background: linear-gradient(0deg, var(--special-background-green) 0%, var(--special-background-green) 100%),
-    url("../../img/background/gift-photo.png") no-repeat center;
+    url("../../img/background/gift-photo-mobile@1x.png") no-repeat center;
   min-width: 280px;
   background-size: cover;
   height: 289px;
   background-color: var(--basic-green);
 
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(0deg, var(--special-background-green) 0%, var(--special-background-green) 100%),
+      url("../../img/background/gift-photo-mobile@2x.png") no-repeat center;
+    background-size: cover;
+  }
+
   @media (min-width: $tablet) {
     height: 200px;
     background: linear-gradient(0deg, var(--special-background-green) 0%, var(--special-background-green) 100%),
-      url("../../img/background/gift-photo-tablet.png") no-repeat center;
+      url("../../img/background/gift-photo-tablet@1x.png") no-repeat center;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(0deg, var(--special-background-green) 0%, var(--special-background-green) 100%),
+        url("../../img/background/gift-photo-tablet@2x.png") no-repeat center;
+      background-size: cover;
+    }
   }
 
   @media (min-width: $desktop) {
     background: linear-gradient(0deg, var(--special-background-green) 0%, var(--special-background-green) 100%),
-      url("../../img/background/gift-photo-desktop.png") no-repeat center;
+      url("../../img/background/gift-photo-desktop@1x.png") no-repeat center;
     background-size: cover;
     height: 290px;
     min-width: 244px;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(0deg, var(--special-background-green) 0%, var(--special-background-green) 100%),
+        url("../../img/background/gift-photo-desktop@2x.png") no-repeat center;
+      background-size: cover;
+    }
   }
 }
 

@@ -85,3 +85,10 @@
 .card__button {
   width: 100%;
 }
+
+.card__image {
+  @media (min-width: $tablet) {
+    width: auto;
+    height: auto;
+  }
+}
