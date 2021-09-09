@@ -7,6 +7,7 @@
   }
 
   @media (min-width: $desktop) {
+    padding-top: 74px;
     padding-bottom: 64px;
     background-image: linear-gradient(var(--basic-white) 0%, var(--basic-white) 29%, var(--basic-gray) 29%, var(--basic-gray) 100%);
   }
@@ -157,9 +158,8 @@
 
 .example__wrapper {
   @media (min-width: $desktop) {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
