@@ -1,0 +1,12 @@
+.map__location {
+  width: 100%;
+}
+
+.map__location iframe {
+  border: 0;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+    width: 100%;
+  }
+}

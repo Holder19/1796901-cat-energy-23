@@ -37,15 +37,22 @@
 
     @media (min-width: $tablet) {
       margin-right: 19px;
+      width: 40px;
+      height: 40px;
     }
   }
 
   &::after {
     content: "";
-    width: 18px;
-    height: 14px;
+    width: 19px;
+    height: 15px;
     position: absolute;
     transform: translateX(6px);
+
+    @media (min-width: $tablet) {
+      width: 25px;
+      height: 20px;
+    }
   }
 }
 
@@ -58,7 +65,11 @@
 }
 
 .additionally__checkbox:checked + .additionally__label::after {
-  background-color: var(--basic-green);
+  background: url("../../img/icon/icon-mark.svg") no-repeat center;
+
+  @media (min-width: $tablet) {
+    background-size: 25px 20px;
+  }
 }
 
 .addititionally__subtitle {

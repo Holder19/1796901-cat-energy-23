@@ -96,6 +96,24 @@
   }
 }
 
+
+.slider__after {
+  position: relative;
+
+  &::after {
+    @media (min-width: $desktop) {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 160px;
+      width: 100%;
+      height: calc(100% - 193px);
+      background-color: var(--special-border-gray);
+      box-shadow: 200px 200px 0 200px var(--special-border-gray);
+    }
+  }
+}
+
 .slider {
   display: grid;
   place-items: center;

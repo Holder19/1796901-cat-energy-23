@@ -62,9 +62,27 @@
       font-size: 280px;
       line-height: 280px;
       top: -16px;
-      right: 0;
+      right: 16px;
       color: var(--basic-gray);
       z-index: -1;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: var(--basic-green);
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 32px;
+
+    @media (min-width: $tablet) {
+      top: 8%;
+      width: 80px;
+      height: 80px;
     }
   }
 }
@@ -80,5 +98,29 @@
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.features__item--leaf {
+  &::before {
+    background-image: url("../../img/icon/icon_leaf.svg");
+  }
+}
+
+.features__item--tub {
+  &::before {
+    background-image: url("../../img/icon/icon_tub.svg");
+  }
+}
+
+.features__item--eat {
+  &::before {
+    background-image: url("../../img/icon/icon_eat.svg");
+  }
+}
+
+.features__item--clock {
+  &::before {
+    background-image: url("../../img/icon/icon_clock.svg");
   }
 }

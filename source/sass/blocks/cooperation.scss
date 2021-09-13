@@ -46,11 +46,15 @@
   @media (min-width: $desktop) {
     width: 570px;
     padding: 62px 89px 59px 76px;
+    position: absolute;
+    background-color: var(--basic-white);
+    top: 95px;
   }
 }
 
 .cooperation {
   background-color: var(--basic-gray);
+  position: relative;
 
   @media (min-width: $desktop) {
     background-color: transparent;

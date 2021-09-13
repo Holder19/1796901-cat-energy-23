@@ -15,9 +15,17 @@
     font-weight: normal;
     margin: 0;
     padding: 0;
+
+    @media (min-width: $tablet) {
+      margin-right: 22px;
+    }
   }
 }
 
+.copyright__image {
+  fill: var(--icon-gray);
+}
+
 .copyright__link:hover .copyright__image {
-  background-color: var(--basic-green);
+  fill: var(--basic-green);
 }

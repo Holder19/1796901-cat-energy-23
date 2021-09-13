@@ -1,1 +1,5 @@
-//
+.pro-program {
+  &::before {
+    --icon: var(--icon-pro);
+  }
+}

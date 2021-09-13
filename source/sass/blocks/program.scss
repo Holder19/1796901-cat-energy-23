@@ -1,13 +1,40 @@
 .program {
+  --circle-radius: calc(100% * 100 / 280);
+  --icon-size: 70px;
+  --icon-slim: url("../../img/icon/cat-slim.svg");
+  --icon-pro: url("../../img/icon/cat-pro.svg");
   background-color: var(--basic-gray);
   padding: 30px 33px 18px 20px;
+  position: relative;
 
   @media (min-width: $tablet) {
     padding: 77px 62px 53px 52px;
+    --icon-size: 280px;
 
     @media (min-width: $desktop) {
+      --icon-size: 140px;
       width: 570px;
       padding: 77px 61px 55px 52px;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    float: left;
+    block-size: var(--icon-size);
+    inline-size: var(--icon-size);
+    margin: -17px 9px 12px -8px;
+    background-image: var(--icon, var(--icon-slim)), radial-gradient(var(--basic-green) var(--circle-radius), transparent var(--circle-radius));
+
+    @media (min-width: $tablet) {
+      float: right;
+      margin: -30px -30px -15px 12px;
+    }
+
+    @media (min-width: $desktop) {
+      float: left;
+      margin: -50px 42px 10px -20px;
     }
   }
 }
@@ -20,7 +47,6 @@
   line-height: 37px;
   font-weight: 400;
   color: var(--basic-black);
-  text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
@@ -66,6 +92,8 @@
   position: relative;
   transition: all 0.1s;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 
   &::after {
     content: "";
@@ -73,14 +101,8 @@
     height: 12px;
     background-image: url("../../img/icon/icon-arrow.svg");
     background-repeat: no-repeat;
-    display: inline-block;
     background-position: left var(--arrow-shift, -8px) center;
     margin-left: 15px;
-    vertical-align: middle;
-
-    @media (min-width: $tablet) {
-      transform: translateY(-2px);
-    }
   }
 
   &:hover::after {

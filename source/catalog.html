@@ -14,8 +14,15 @@
   <div class="page__leveler page__leveler--mobile_off">
     <div class="page-header__wrapper">
       <header class="page-header">
-        <a class="page-header__logo">
-          <img  class="page-header__logo-image"  width="33" height="37" src="img/icon/logo-cat-energy.svg" alt="Логотип интернет-магазина фитнес еды для котиков">
+        <a class="page-header__logo" href="index.html">
+          <div class="page-header__logo-wrapper">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="./img/icon/logo.svg#desktop">
+              <source media="(min-width: 768px)" srcset="./img/icon/logo.svg#tablet">
+              <img class="page-header__logo-icon" src="./img/icon/logo.svg#mobile" width="33" height="38" alt="Иконка логотипа магазина Кэт энерджи">
+            </picture>
+          </div>
+          <img class="page-header__logo-text" src="./img/icon/logo.svg#logotype" alt="Логотип магазина Кэт энерджи" width="101" height="18">
         </a>
         <nav class="main-nav main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -284,9 +291,10 @@
           <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <div class="cooperation__map">
-          <!-- Здесь будет карта -->
-        </div>
+      </div>
+      <div class="cooperation__map map">
+        <div class="map__location">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716405354!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619771954735!5m2!1sru!2sru" width="320" height="362" style="border: 0;" loading="lazy"></iframe></div>
       </div>
     </section>
   </main>
@@ -295,7 +303,7 @@
       <div class="page-footer__wrapper">
       <div class="page-footer__logo">
         <a href="#">
-          <img class="page-footer__logo-icon" src="./img/icon/logo-cat-energy.svg" alt="Логотип интернет-магазина фитнес еды для котиков" width="128" height="24">
+          <img class="page-footer__logo-icon" src="./img/icon/logo.svg#logotype" alt="Логотип интернет-магазина фитнес еды для котиков" width="128" height="24">
         </a>
       </div>
       <div class="page-footer__social social">
@@ -313,13 +321,15 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="#">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <h3 class="copyright__text">HTML Academy</h3>
-          <img class="copyright__image" src="./img/html-academy.svg" alt="Логотип HTML Academy" width="27" height="34">
+          <svg class="copyright__image" width="27" height="34">
+            <use xlink:href="./img/sprite.svg#logo-academy"></use>
+          </svg>
         </a>
       </div>
     </div>
   </div>
   </footer>
-</body>
+  </body>
 </html>
