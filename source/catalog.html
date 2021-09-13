@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/apple_180.png">
-  <link rel="manifest" href="manifest.webmanifest">
   <title>Кэт энерджи: Каталог товаров</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" sizes="any" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/180.png" sizes="180x180" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
+
 <body class="page__body">
   <div class="page__leveler page__leveler--mobile_off">
     <div class="page-header__wrapper">
@@ -17,26 +21,28 @@
         <a class="page-header__logo" href="index.html">
           <div class="page-header__logo-wrapper">
             <picture>
-              <source media="(min-width: 1280px)" srcset="./img/icon/logo.svg#desktop">
-              <source media="(min-width: 768px)" srcset="./img/icon/logo.svg#tablet">
-              <img class="page-header__logo-icon" src="./img/icon/logo.svg#mobile" width="33" height="38" alt="Иконка логотипа магазина Кэт энерджи">
+              <source media="(min-width: 1280px)" srcset="./img/logo.svg#desktop">
+              <source media="(min-width: 768px)" srcset="./img/logo.svg#tablet">
+              <img class="page-header__logo-icon" src="./img/logo.svg#mobile" width="33" height="38" alt="Иконка логотипа магазина Кэт энерджи">
             </picture>
           </div>
-          <img class="page-header__logo-text" src="./img/icon/logo.svg#logotype" alt="Логотип магазина Кэт энерджи" width="101" height="18">
+          <img class="page-header__logo-text" src="./img/logo.svg#logotype" alt="Логотип магазина Кэт энерджи" width="101" height="18">
         </a>
         <nav class="main-nav main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="main-nav__list nav-list">
-              <li class="nav-list__item">
-                <a class="nav-list__link" href="index.html">Главная</a>
-              </li>
-              <li class="nav-list__item">
-                <a class="nav-list__link" aria-current="page">Каталог продукции</a>
-              </li>
-              <li class="nav-list__item">
-                <a class="nav-list__link" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" aria-current="page">Каталог продукции</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
         </nav>
       </header>
     </div>
@@ -248,41 +254,41 @@
     </div>
     <div class="page__leveler">
       <div class="additional-product__wrapper">
-          <section class="additional-products">
-            <h2 class="additional-products__title">Дополнительные товары</h2>
-            <table class="additional-products__table">
-              <tr class="additional-products__row">
-                <th class="additional-products__subtitle">Сахарозаменитель</th>
-                <td class="additional-product__weight">1 упаковка (100 г)</td>
-                <td class="additional-product__price">200 Р.</td>
-                <td class="additional-products__button"><a class="button" href="#">Заказать</a></td>
-              </tr>
-              <tr class="additional-products__row">
-                <th class="additional-products__subtitle">Питьевая вода</th>
-                <td class="additional-product__weight">5 литров</td>
-                <td class="additional-product__price">50 Р.</td>
-                <td class="additional-products__button"><a class="button" href="#">Заказать</a></td>
-              </tr>
-              <tr class="additional-products__row">
-                <th class="additional-products__subtitle">Молоко</th>
-                <td class="additional-product__weight">1 литр</td>
-                <td class="additional-product__price">100 Р.</td>
-                <td class="additional-products__button"><a class="button" href="#">Заказать</a></td>
-              </tr>
-              <tr class="additional-products__row">
-                <th class="additional-products__subtitle">Витамины</th>
-                <td class="additional-product__weight">1 упаковка (30 г)</td>
-                <td class="additional-product__price">300 Р.</td>
-                <td class="additional-products__button"><a class="button" href="#">Заказать</a></td>
-              </tr>
-            </table>
-          </section>
-          <section class="additional-product__gift gift">
-            <h2 class="visually-hidden">Получайте подарки!</h2>
-            <div class="gift__text-wrapper">
-              <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
-            </div>
-          </section>
+        <section class="additional-products">
+          <h2 class="additional-products__title">Дополнительные товары</h2>
+          <table class="additional-products__table">
+            <tr class="additional-products__row">
+              <th class="additional-products__subtitle">Сахарозаменитель</th>
+              <td class="additional-product__weight">1 упаковка (100 г)</td>
+              <td class="additional-product__price">200 Р.</td>
+              <td class="additional-products__button"><a class="button" href="#">Заказать</a></td>
+            </tr>
+            <tr class="additional-products__row">
+              <th class="additional-products__subtitle">Питьевая вода</th>
+              <td class="additional-product__weight">5 литров</td>
+              <td class="additional-product__price">50 Р.</td>
+              <td class="additional-products__button"><a class="button" href="#">Заказать</a></td>
+            </tr>
+            <tr class="additional-products__row">
+              <th class="additional-products__subtitle">Молоко</th>
+              <td class="additional-product__weight">1 литр</td>
+              <td class="additional-product__price">100 Р.</td>
+              <td class="additional-products__button"><a class="button" href="#">Заказать</a></td>
+            </tr>
+            <tr class="additional-products__row">
+              <th class="additional-products__subtitle">Витамины</th>
+              <td class="additional-product__weight">1 упаковка (30 г)</td>
+              <td class="additional-product__price">300 Р.</td>
+              <td class="additional-products__button"><a class="button" href="#">Заказать</a></td>
+            </tr>
+          </table>
+        </section>
+        <section class="additional-product__gift gift">
+          <h2 class="visually-hidden">Получайте подарки!</h2>
+          <div class="gift__text-wrapper">
+            <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
+        </section>
       </div>
     </div>
     <section class="cooperation">
@@ -301,35 +307,36 @@
   <footer class="page-footer">
     <div class="page__leveler">
       <div class="page-footer__wrapper">
-      <div class="page-footer__logo">
-        <a href="#">
-          <img class="page-footer__logo-icon" src="./img/icon/logo.svg#logotype" alt="Логотип интернет-магазина фитнес еды для котиков" width="128" height="24">
-        </a>
-      </div>
-      <div class="page-footer__social social">
-        <h2 class="visually-hidden">Давайте дружить</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Инстаграмм</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <h3 class="copyright__text">HTML Academy</h3>
-          <svg class="copyright__image" width="27" height="34">
-            <use xlink:href="./img/sprite.svg#logo-academy"></use>
-          </svg>
-        </a>
+        <div class="page-footer__logo">
+          <a href="#">
+            <img class="page-footer__logo-icon" src="./img/logo.svg#logotype" alt="Логотип интернет-магазина фитнес еды для котиков" width="128" height="24">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <h2 class="visually-hidden">Давайте дружить</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Инстаграмм</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <h3 class="copyright__text">HTML Academy</h3>
+            <svg class="copyright__image" width="27" height="34">
+              <use xlink:href="./img/sprite.svg#logo-academy"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
   </footer>
-  </body>
+</body>
+
 </html>

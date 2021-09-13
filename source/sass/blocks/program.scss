@@ -1,8 +1,8 @@
 .program {
   --circle-radius: calc(100% * 100 / 280);
   --icon-size: 70px;
-  --icon-slim: url("../../img/icon/cat-slim.svg");
-  --icon-pro: url("../../img/icon/cat-pro.svg");
+  --icon-slim: url("../../icons/sprite.svg#cat-slim");
+  --icon-pro: url("../../icons/sprite.svg#cat-pro");
   background-color: var(--basic-gray);
   padding: 30px 33px 18px 20px;
   position: relative;
@@ -99,7 +99,7 @@
     content: "";
     width: 32px;
     height: 12px;
-    background-image: url("../../img/icon/icon-arrow.svg");
+    background-image: url("../../icons/sprite.svg#arrow");
     background-repeat: no-repeat;
     background-position: left var(--arrow-shift, -8px) center;
     margin-left: 15px;

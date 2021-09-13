@@ -103,24 +103,24 @@
 
 .features__item--leaf {
   &::before {
-    background-image: url("../../img/icon/icon_leaf.svg");
+    background-image: url("../../icons/sprite.svg#leaf");
   }
 }
 
 .features__item--tub {
   &::before {
-    background-image: url("../../img/icon/icon_tub.svg");
+    background-image: url("../../icons/sprite.svg#tub");
   }
 }
 
 .features__item--eat {
   &::before {
-    background-image: url("../../img/icon/icon_eat.svg");
+    background-image: url("../../icons/sprite.svg#eat");
   }
 }
 
 .features__item--clock {
   &::before {
-    background-image: url("../../img/icon/icon_clock.svg");
+    background-image: url("../../icons/sprite.svg#clock");
   }
 }

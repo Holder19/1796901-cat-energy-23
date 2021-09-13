@@ -78,11 +78,11 @@
 }
 
 .contacts__input-icon--mail {
-  mask: url("../../img/icon/icon-mail.svg") no-repeat center;
+  mask: url("../../icons/sprite.svg#mail") no-repeat center;
 }
 
 .contacts__input-icon--phone {
-  mask: url("../../img/icon/icon-phone.svg") no-repeat center;
+  mask: url("../../icons/sprite.svg#phone") no-repeat center;
   width: 20px;
   height: 20px;
   transform: translateX(3px);
