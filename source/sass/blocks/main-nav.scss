@@ -7,19 +7,20 @@
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
-    width: 440px;
+    min-width: 440px;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop) {
-    width: 478px;
+    min-width: 478px;
   }
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 14px;
+  right: 14px;
   cursor: pointer;
   display: block;
   width: 35px;

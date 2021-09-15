@@ -39,9 +39,11 @@
 
 .page-header__wrapper {
   padding-top: 10px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet) {
-    padding-top: 24px;
+    padding-top: 27px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop) {

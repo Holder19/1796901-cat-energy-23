@@ -4,6 +4,10 @@
   list-style: none;
   display: grid;
   row-gap: 13px;
+
+  @media (min-width: $desktop) {
+    row-gap: 17px;
+  }
 }
 
 .program-goal__item {
@@ -22,6 +26,11 @@
     border-radius: 50%;
     border: 1px solid var(--special-gray);
     margin-right: 15px;
+
+    @media (min-width: $tablet) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &::after {
@@ -31,6 +40,12 @@
     border-radius: 50%;
     position: absolute;
     transform: translateX(8px);
+
+    @media (min-width: $tablet) {
+      width: 18px;
+      height: 18px;
+      transform: translate(10px, -3px);
+    }
   }
 }
 

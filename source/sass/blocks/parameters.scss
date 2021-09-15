@@ -3,10 +3,14 @@
   padding: 0;
   list-style: none;
   display: grid;
-  row-gap: 13px;
+  row-gap: 16px;
 
   @media (min-width: $tablet) {
     row-gap: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    row-gap: 22px;
   }
 }
 

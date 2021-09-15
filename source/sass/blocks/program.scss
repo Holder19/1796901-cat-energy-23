@@ -1,20 +1,20 @@
 .program {
-  --circle-radius: calc(100% * 100 / 280);
+  --circle-radius: 50%;
   --icon-size: 70px;
   --icon-slim: url("../../icons/sprite.svg#cat-slim");
   --icon-pro: url("../../icons/sprite.svg#cat-pro");
   background-color: var(--basic-gray);
-  padding: 30px 33px 18px 20px;
+  padding: 30px 33px 24px 20px;
   position: relative;
 
   @media (min-width: $tablet) {
-    padding: 77px 62px 53px 52px;
+    padding: 83px 62px 53px 52px;
     --icon-size: 280px;
 
     @media (min-width: $desktop) {
       --icon-size: 140px;
       width: 570px;
-      padding: 77px 61px 55px 52px;
+      padding: 77px 61px 58px 52px;
     }
   }
 
@@ -29,12 +29,12 @@
 
     @media (min-width: $tablet) {
       float: right;
-      margin: -30px -30px -15px 12px;
+      margin: -30px -42px -15px 12px;
     }
 
     @media (min-width: $desktop) {
       float: left;
-      margin: -50px 42px 10px -20px;
+      margin: -50px -42px 10px -20px;
     }
   }
 }
@@ -42,7 +42,7 @@
 .program__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 29px;
+  margin-bottom: 31px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -53,7 +53,7 @@
     line-height: 36px;
     font-size: 36px;
     text-align: left;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
   }
 
   @media (min-width: $desktop) {
@@ -65,23 +65,23 @@
 .program__text {
   margin: 0;
   padding: 0;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
   font-family: "Arial", sans-serif;
   color: var(--basic-dark-gray);
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border-bottom: 1px solid var(--special-form-gray);
 
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 31px;
     border-bottom: 0;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 23px;
+    margin-bottom: 7px;
   }
 }
 
@@ -103,6 +103,11 @@
     background-repeat: no-repeat;
     background-position: left var(--arrow-shift, -8px) center;
     margin-left: 15px;
+    background-size: 32px;
+
+    @media (min-width: $tablet) {
+      margin-left: 25px;
+    }
   }
 
   &:hover::after {

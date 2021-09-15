@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   margin-top: 27px;
+  margin-right: 20px;
   padding-bottom: 41px;
   color: var(--basic-black);
   font-size: 36px;
@@ -13,9 +14,14 @@
   @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 82px;
+    margin: 62px 0 91px;
+    text-align: left;
     border: none;
     padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 75px;
   }
 }
 
@@ -23,7 +29,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: 8px;
 
   @media (min-width: $tablet) {
     display: grid;

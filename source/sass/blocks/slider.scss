@@ -3,13 +3,14 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  width: 228px;
-  margin-top: 29px;
+  width: 209px;
+  margin-top: 31px;
   align-items: center;
 
   @media (min-width: $tablet) {
     min-width: 593px;
     margin-right: auto;
+    margin-top: 13px;
   }
 }
 
@@ -26,6 +27,8 @@
     text-decoration-style: dotted;
     text-decoration-color: var(--special--slider-gray);
     text-underline-offset: 3px;
+    font-size: 20px;
+    line-height: 30px;
 
     &:hover {
       text-decoration-style: solid;
@@ -68,7 +71,7 @@
     background-color: var(--basic-white);
     border-radius: 50%;
     border: 1px solid var(--special--slider-gray);
-    left: 47%;
+    left: 51%;
     top: -13px;
     cursor: pointer;
 
@@ -126,7 +129,7 @@
 
   @media (min-width: $desktop) {
     min-width: 676px;
-    transform: translate(25px, -29px);
+    transform: translate(25px, -47px);
   }
 }
 
@@ -143,7 +146,7 @@
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: calc(26px + 2px + var(--curtain-position)) calc(100% - 26px - 2px - var(--curtain-position));
+    grid-template-columns: calc(15px + 2px + var(--curtain-position)) calc(100% - 26px - 2px - var(--curtain-position));
   }
 }
 
@@ -161,6 +164,11 @@
 
 .slider__image--before {
   object-position: left;
+  margin: 0 -15px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .slider__image--after {

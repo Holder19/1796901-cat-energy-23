@@ -3,11 +3,13 @@
   padding: 35px 0;
   list-style: none;
   display: grid;
-  row-gap: 20px;
+  row-gap: 11px;
 
   @media (min-width: $tablet) {
     grid-template-columns: 1fr 1fr;
-    padding: 57px 0;
+    padding: 65px 0;
+    row-gap: 30px;
+    column-gap: 62px;
   }
 
   @media (min-width: $desktop) {

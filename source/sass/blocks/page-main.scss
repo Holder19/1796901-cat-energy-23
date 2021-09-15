@@ -5,7 +5,7 @@
 .page-main__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 37px;
+  margin-bottom: 39px;
   font-size: 36px;
   line-height: 36px;
   color: var(--basic-black);
@@ -23,6 +23,7 @@
   @media (min-width: $desktop) {
     padding: 0;
     margin-bottom: 56px;
+    margin-top: 73px;
   }
 }
 
@@ -37,7 +38,7 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 66px;
+    margin-bottom: 62px;
     padding: 0 39px;
   }
 

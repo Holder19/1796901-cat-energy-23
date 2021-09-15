@@ -3,14 +3,16 @@
   line-height: 26px;
   color: var(--basic-black);
   padding-left: 20px;
-  padding-top: 26px;
+  padding-top: 29px;
   width: min-content;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet) {
     font-size: 36px;
     line-height: 36px;
     margin: 0;
     padding: 0;
+    width: auto;
   }
 
   @media (min-width: $desktop) {
@@ -79,6 +81,7 @@
 
 .contacts__input-icon--mail {
   mask: url("../../icons/sprite.svg#mail") no-repeat center;
+  mask-size: 18px;
 }
 
 .contacts__input-icon--phone {

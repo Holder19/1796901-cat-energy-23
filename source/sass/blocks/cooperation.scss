@@ -6,9 +6,11 @@
   font-weight: 400;
   color: var(--special-black);
   width: 140px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet) {
     font-size: 20px;
+    line-height: 21px;
   }
 }
 
@@ -26,10 +28,15 @@
   @media (min-width: $tablet) {
     font-size: 16px;
     width: 160px;
+    text-align: right;
 
     span {
       display: block;
-      margin-top: 10px;
+      margin-top: 18px;
+    }
+
+    @media (min-width: $desktop) {
+      text-align: left;
     }
   }
 }
@@ -37,7 +44,7 @@
 .cooperation__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 27px 0 26px 0;
+  padding: 28px 0 21px 0;
 
   @media (min-width: $tablet) {
     padding: 66px 42px 58px 42px;
@@ -45,7 +52,7 @@
 
   @media (min-width: $desktop) {
     width: 570px;
-    padding: 62px 89px 59px 76px;
+    padding: 43px 84px 52px 78px;
     position: absolute;
     background-color: var(--basic-white);
     top: 95px;

@@ -1,7 +1,7 @@
 .additional-products__title {
   margin: 0;
   padding: 0;
-  margin-top: 25px;
+  margin-top: 13px;
   padding-bottom: 36px;
   color: var(--basic-black);
   font-size: 24px;
@@ -14,8 +14,9 @@
   @media (min-width: $tablet) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 80px;
-    margin-left: 20px;
+    margin-top: 57px;
+    margin-bottom: 40px;
+    margin-left: 35px;
   }
 
   @media (min-width: $desktop) {
@@ -86,8 +87,7 @@
 .additional-products__row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-row-gap: 14px;
+  grid-row-gap: 12px;
   padding: 13px 0 19px;
   border-bottom: 1px solid var(--special-gray);
 
@@ -98,9 +98,11 @@
   @media (min-width: $tablet) {
     grid-template-columns: 1fr auto auto;
     grid-template-rows: 1fr;
-    padding: 28px 38px;
+    padding: 25px 38px;
     column-gap: 50px;
-    row-gap: 25px;
+    row-gap: 15px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop) {
@@ -160,7 +162,7 @@
 }
 
 .additional-product__gift {
-  margin-bottom: 35px;
+  margin-bottom: 66px;
 
   @media (min-width: $tablet) {
     margin-bottom: 76px;

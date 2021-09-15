@@ -68,13 +68,17 @@
     margin-bottom: 40px;
     text-align: left;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: 115px;
+  }
 }
 
 .intro__text {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 14px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 29px;
@@ -100,6 +104,8 @@
   @media (min-width: $tablet) {
     grid-row-start: 3;
     width: 244px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -107,11 +113,16 @@
   @media (min-width: $tablet) {
     display: grid;
     padding-left: 90px;
-    padding-bottom: 526px;
+    padding-bottom: 505px;
   }
 
   @media (min-width: $desktop) {
     padding-bottom: 136px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 80px;
+    padding-bottom: 161px;
   }
 }
 
@@ -123,8 +134,8 @@
     width: 708px;
     height: 609px;
     position: absolute;
-    top: 30%;
-    left: 7%;
+    top: 29%;
+    left: 4%;
     z-index: -1;
   }
 
@@ -140,4 +151,5 @@
 .intro__img-wrapper {
   grid-row: 1/5;
   grid-column-start: 2;
+  margin-bottom: 5px;
 }

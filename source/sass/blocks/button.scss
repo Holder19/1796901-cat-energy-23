@@ -6,8 +6,10 @@
   display: flex;
   justify-content: center;
   padding: 10px 20px;
-  font-size: 16px;
-  line-height: 20px;
+
+  @media (min-width: $tablet) {
+    padding: 16px 20px;
+  }
 
   &:hover {
     background-color: var(--special-green-button);
