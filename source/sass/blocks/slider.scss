@@ -15,12 +15,13 @@
 }
 
 .slider__toggle {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   border: 0;
   background-color: transparent;
   text-transform: uppercase;
+  padding: 0;
 
   @media (min-width: $tablet) {
     text-decoration: underline;
@@ -64,6 +65,8 @@
   position: absolute;
   top: 3px;
   left: 6px;
+  --shadow: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px 0 var(--shadow);
 
   @media (min-width: $tablet) {
     width: 34px;
@@ -71,9 +74,13 @@
     background-color: var(--basic-white);
     border-radius: 50%;
     border: 1px solid var(--special--slider-gray);
-    left: 51%;
+    left: 47%;
     top: -13px;
     cursor: pointer;
+
+    @media (min-width: $desktop) {
+      left: 51%;
+    }
 
     &:active {
       border-color: var(--basic-green);
@@ -88,6 +95,10 @@
       position: absolute;
       top: 12px;
       left: 11px;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 4px 0 var(--shadow);
     }
   }
 }
@@ -108,7 +119,7 @@
       content: "";
       position: absolute;
       z-index: -1;
-      top: 160px;
+      top: 195px;
       width: 100%;
       height: calc(100% - 193px);
       background-color: var(--special-border-gray);

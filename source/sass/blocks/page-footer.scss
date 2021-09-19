@@ -11,12 +11,12 @@
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 44px;
-    padding-bottom: 50px;
+    padding-top: 51px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 25px;
+    padding: 60px 0;
   }
 }
 
@@ -44,7 +44,7 @@
 }
 
 .page-footer__social {
-  padding: 17px 0 11px;
+  padding: 17px 0 16px;
   border-bottom: 1px solid var(--special-form-gray);
   width: 100%;
 

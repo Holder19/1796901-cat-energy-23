@@ -14,7 +14,7 @@
     line-height: 22px;
     text-align: center;
     width: 134px;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
   }
 }
 
@@ -56,13 +56,15 @@
   background-color: var(--basic-gray);
   color: var(--basic-dark-gray);
   width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .card-more__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 7px 20px;
+  padding: 0 20px;
 
   @media (min-width: $tablet) {
     padding: 0;

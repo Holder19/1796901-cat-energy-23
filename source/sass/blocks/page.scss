@@ -37,3 +37,38 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
+
+.page__products-gift {
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
+}
+
+.page__additional-product-wrapper {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: auto 244px;
+    align-items: flex-end;
+    column-gap: 80px;
+    margin-bottom: 75px;
+  }
+}
+
+.page__header-wrapper {
+  padding-top: 10px;
+
+  @media (min-width: $tablet) {
+    padding-top: 27px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 53px;
+  }
+}

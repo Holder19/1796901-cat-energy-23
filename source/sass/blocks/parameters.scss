@@ -6,11 +6,11 @@
   row-gap: 16px;
 
   @media (min-width: $tablet) {
-    row-gap: 20px;
+    row-gap: 19px;
   }
 
   @media (min-width: $desktop) {
-    row-gap: 22px;
+    row-gap: 20px;
   }
 }
 
@@ -24,6 +24,10 @@
 
 .parameters__label {
   margin-right: 13px;
+
+  @media (min-width: $tablet) {
+    margin-right: 20px;
+  }
 }
 
 .parameters__input {

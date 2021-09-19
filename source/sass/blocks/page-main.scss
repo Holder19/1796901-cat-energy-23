@@ -1,5 +1,9 @@
 .page-main__form {
-  padding-bottom: 32px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 71px;
+  }
 }
 
 .page-main__title {
@@ -23,7 +27,7 @@
   @media (min-width: $desktop) {
     padding: 0;
     margin-bottom: 56px;
-    margin-top: 73px;
+    margin-top: 75px;
   }
 }
 
@@ -38,11 +42,12 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 62px;
+    margin-bottom: 67px;
     padding: 0 39px;
   }
 
   @media (min-width: $desktop) {
     padding: 0;
+    margin-bottom: 66px;
   }
 }

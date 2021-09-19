@@ -1,5 +1,5 @@
 .button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   background-color: var(--basic-green);
   color: var(--basic-white);
   text-transform: uppercase;
@@ -27,5 +27,15 @@
 
   &:active {
     color: var(--color-button-active-gray);
+  }
+}
+
+.button--additional {
+  @media (min-width: $tablet) {
+    padding: 8px 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 10px 20px;
   }
 }

@@ -38,7 +38,7 @@
       top: -127px;
       right: 0;
       width: 50%;
-      height: 694px;
+      height: 709px;
       --intro-image: url("../../img/background/index-background-desktop@1x.jpg");
 
       @media (min-resolution: 2dppx) {
@@ -70,7 +70,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 115px;
+    margin-top: 112px;
   }
 }
 
@@ -92,6 +92,7 @@
 
   @media (min-width: $desktop) {
     grid-row-start: 2;
+    padding-right: 20px;
   }
 }
 
@@ -134,7 +135,7 @@
     width: 708px;
     height: 609px;
     position: absolute;
-    top: 29%;
+    top: 30%;
     left: 4%;
     z-index: -1;
   }
@@ -143,7 +144,7 @@
     display: block;
     height: auto;
     width: 554px;
-    transform: translateX(-178px);
+    transform: translate(-178px, 30px);
     position: static;
   }
 }

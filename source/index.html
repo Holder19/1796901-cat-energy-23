@@ -16,7 +16,7 @@
 
 <body class="page__body">
   <div class="page__leveler page__leveler--mobile_off">
-    <div class="page-header__wrapper">
+    <div class="page__header-wrapper">
       <header class="page-header">
         <a class="page-header__logo">
           <div class="page-header__logo-wrapper">
@@ -58,6 +58,9 @@
           <p class="intro__text">Занялся собой? Займись котом!</p>
           <div class="intro__img-wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 1280px)" srcset="./img/index-product-image-desktop@1x.webp 1x, ./img/index-product-image-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/index-product-image-tablet@1x.webp 1x, ./img/index-product-image-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/index-product-image-mobile@1x.webp 1x, ./img/index-product-image-mobile@2x.webp 2x">
               <source media="(min-width: 1280px)" srcset="./img/index-product-image-desktop@1x.png 1x, ./img/index-product-image-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="./img/index-product-image-tablet@1x.png 1x, ./img/index-product-image-tablet@2x.png 2x">
               <img class="intro__img" src="./img/index-product-image-mobile@1x.png" srcset="./img/index-product-image-mobile@2x.png 2x" alt="Стаканчик корма с курочкой для вашего котика" width="280" height="270">
@@ -127,23 +130,27 @@
           <div class="slider__images-wrapper">
             <div class="slider__before">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/cat_fat@1x.webp 1x, ./img/cat_fat@2x.webp 2x">
+                <source type="image/webp" srcset="./img/cat_fat_mobile@1x.webp 1x, ./img/cat_fat_mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="./img/cat_fat@1x.png 1x, ./img/cat_fat@2x.png 2x">
                 <img class="slider__image slider__image--before" src="./img/cat_fat_mobile@1x.png" srcset="./img/cat_fat_mobile@2x.png 2x" alt="Пример котика до приема нашей продукции" width="311" height="232">
               </picture>
             </div>
             <div class="slider__after">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/cat_skinny@1x.webp 1x, ./img/cat_skinny@2x.webp 2x">
+                <source type="image/webp" srcset="./img/cat_skinny_mobile@1x.webp 1x, ./img/cat_skinny_mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="./img/cat_skinny@1x.png 1x, ./img/cat_skinny@2x.png 2x">
                 <img class="slider__image slider__image--after" src="./img/cat_skinny_mobile@1x.png" srcset="./img/cat_skinny_mobile@2x.png 2x" alt="Пример котика после приема нашей продукции">
               </picture>
             </div>
           </div>
           <div class="slider__toggles">
-            <button class="slider__toggle slider__toggle-before" type="button">Было</button>
+            <button class="slider__toggle slider__toggle--before" type="button">Было</button>
             <div class="slider__bar">
               <div class="slider__bar-toggle"></div>
             </div>
-            <button class="slider__toggle slider__toggle-after" type="button">Стало</button>
+            <button class="slider__toggle slider__toggle--after" type="button">Стало</button>
           </div>
         </div>
       </div>

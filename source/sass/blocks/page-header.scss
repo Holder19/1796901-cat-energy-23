@@ -16,6 +16,7 @@
   grid-template-columns: min-content minmax(100px, auto);
   column-gap: 57px;
   align-items: center;
+  padding-bottom: 12px;
 
   &:hover {
     opacity: 0.8;
@@ -29,25 +30,12 @@
     height: 52px;
     margin-left: 0;
     column-gap: 12px;
+    padding: 0;
   }
 
   @media (min-width: $desktop) {
     height: 59px;
     column-gap: 14px;
-  }
-}
-
-.page-header__wrapper {
-  padding-top: 10px;
-  padding-bottom: 12px;
-
-  @media (min-width: $tablet) {
-    padding-top: 27px;
-    padding-bottom: 0;
-  }
-
-  @media (min-width: $desktop) {
-    padding-top: 53px;
   }
 }
 

@@ -39,7 +39,7 @@
 
   @media (min-width: $tablet) {
     border: 1px solid var(--special-input-gray);
-    margin: 0 39px 71px;
+    margin: 0 40px 74px;
     padding: 25px 30px;
   }
 
@@ -50,7 +50,7 @@
 
 .form__contacts {
   margin: 0;
-  padding: 25px 0;
+  padding: 25px 0 27px;
   border: none;
 
   @media (min-width: $tablet) {
@@ -79,7 +79,7 @@
 }
 
 .form__textarea {
-  margin-top: 38px;
+  margin-top: 37px;
   margin-bottom: 23px;
   border: 1px solid var(--special-input-gray);
   min-height: 150px;
@@ -87,8 +87,13 @@
   resize: none;
 
   @media (min-width: $tablet) {
-    margin-top: 76px;
-    margin-bottom: 67px;
+    margin-top: 73px;
+    margin-bottom: 58px;
+    min-height: 174px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 58px;
   }
 }
 
@@ -121,12 +126,14 @@
 .form__button {
   width: 100%;
   border: none;
-  margin-bottom: 19px;
+  margin-bottom: 22px;
   font-size: 16px;
+  padding: 8px 20px;
 
   @media (min-width: $tablet) {
     margin: 0;
     font-size: 20px;
+    padding: 11px 20px;
   }
 }
 
@@ -149,12 +156,12 @@
   line-height: 18px;
   text-transform: uppercase;
   padding: 12px 12px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
-    padding: 11px 19px;
+    padding: 10px 19px;
   }
 
   &::placeholder {
@@ -179,7 +186,7 @@
     display: grid;
     grid-template-columns: 285px 1fr;
     align-items: center;
-    column-gap: 30px;
+    column-gap: 60px;
     padding: 0 39px;
   }
 
@@ -195,7 +202,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    margin-bottom: 65px;
+    margin-bottom: 67px;
   }
 }
 

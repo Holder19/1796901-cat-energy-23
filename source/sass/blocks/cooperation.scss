@@ -44,7 +44,7 @@
 .cooperation__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 28px 0 21px 0;
+  padding: 30px 0 22px 0;
 
   @media (min-width: $tablet) {
     padding: 66px 42px 58px 42px;
@@ -52,10 +52,11 @@
 
   @media (min-width: $desktop) {
     width: 570px;
-    padding: 43px 84px 52px 78px;
+    padding: 66px 85px 56px 75px;
     position: absolute;
     background-color: var(--basic-white);
-    top: 95px;
+    top: 105px;
+    align-items: center;
   }
 }
 

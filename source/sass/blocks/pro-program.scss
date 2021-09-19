@@ -1,5 +1,9 @@
 .pro-program {
   &::before {
     --icon: var(--icon-pro);
+
+    @media (min-width: $desktop) {
+      margin-right: -42px;
+    }
   }
 }
