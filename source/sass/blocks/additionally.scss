@@ -33,15 +33,15 @@
 
   &::before {
     content: "";
-    width: 30px;
-    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
     border: 1px solid var(--special-gray);
     margin-right: 16px;
 
     @media (min-width: $tablet) {
       margin-right: 19px;
-      width: 40px;
-      height: 40px;
+      min-width: 40px;
+      min-height: 40px;
     }
   }
 
